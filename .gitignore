@@ -22,6 +22,12 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# Android SDK (large, environment-specific)
+android-sdk/
+
+# Android local config (machine-specific paths)
+game/android/local.properties
+
 # Local
 *.local
 

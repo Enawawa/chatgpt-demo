@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#87CEEB">
+  <title>飞鸟闯关 - 跳跃大师</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+    
+    <!-- 开始界面 -->
+    <div id="start-screen">
+      <h1>飞鸟闯关</h1>
+      <p class="subtitle">跳跃大师</p>
+      <div class="instructions">
+        <p>👆 点击/触摸屏幕让小鸟飞翔</p>
+        <p>🚫 避开绿色管道</p>
+        <p>⭐ 穿越管道得分</p>
+      </div>
+      <button id="start-btn">开始游戏</button>
+    </div>
+
+    <!-- 游戏结束界面 -->
+    <div id="gameover-screen" class="hidden">
+      <h2>游戏结束</h2>
+      <p class="score-label">得分</p>
+      <p id="final-score">0</p>
+      <p class="best-label">最高分</p>
+      <p id="best-score">0</p>
+      <button id="restart-btn">再来一局</button>
+    </div>
+
+    <!-- 游戏中显示的分数 -->
+    <div id="score-display" class="hidden">0</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
