@@ -29,3 +29,10 @@ pnpm-debug.log*
 
 # Editor directories and files
 .idea
+
+# Android SDK (build dependency, re-download as needed)
+android-sdk/
+
+# Cloned reference repos (cocos4-game is the main deliverable)
+cocos4-engine/
+cocos-tutorial-mind-your-step/
