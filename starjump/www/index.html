@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>星际跳跃 - Star Jump</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="start-screen">
+                <h1>🌟 星际跳跃 🌟</h1>
+                <p class="subtitle">Star Jump</p>
+                <p class="instruction">点击屏幕让飞船向上飞行<br>穿越星门，躲避障碍！</p>
+                <button id="start-btn">开始游戏</button>
+                <p class="high-score">最高分: <span id="high-score">0</span></p>
+            </div>
+            <div id="game-over-screen" style="display:none;">
+                <h2>游戏结束</h2>
+                <p>得分: <span id="final-score">0</span></p>
+                <p class="high-score">最高分: <span id="final-high-score">0</span></p>
+                <button id="restart-btn">再来一局</button>
+            </div>
+            <div id="hud" style="display:none;">
+                <span id="score-display">0</span>
+                <span id="lives-display">❤️❤️❤️</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
