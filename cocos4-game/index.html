@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <meta name="theme-color" content="#1a1a2e">
+  <title>跳跃方块 - Jump Blocks</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+    <div id="ui-overlay">
+      <div id="score-display">0</div>
+      <div id="high-score">最高: 0</div>
+      <div id="start-screen">
+        <h1>跳跃方块</h1>
+        <p>点击屏幕跳跃，别掉下去！</p>
+        <button id="start-btn">开始游戏</button>
+      </div>
+      <div id="game-over-screen">
+        <h2>游戏结束</h2>
+        <p id="final-score">得分: 0</p>
+        <button id="restart-btn">再来一局</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/game.js"></script>
+</body>
+</html>

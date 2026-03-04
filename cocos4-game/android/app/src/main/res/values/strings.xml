@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">跳跃方块</string>
+    <string name="title_activity_main">跳跃方块</string>
+    <string name="package_name">com.cocos4.jumpgame</string>
+    <string name="custom_url_scheme">com.cocos4.jumpgame</string>
+</resources>
