@@ -1,0 +1,176 @@
+/* 飞鸟闯关 - 游戏样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #87CEEB;
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%);
+}
+
+/* 开始界面 */
+#start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(135, 206, 235, 0.95);
+  z-index: 10;
+  padding: 20px;
+}
+
+#start-screen h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  color: #2C3E50;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#start-screen .subtitle {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  color: #34495E;
+  margin-bottom: 30px;
+}
+
+#start-screen .instructions {
+  background: rgba(255,255,255,0.8);
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#start-screen .instructions p {
+  font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+  color: #2C3E50;
+  margin: 8px 0;
+}
+
+#start-btn {
+  padding: 15px 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #27AE60, #2ECC71);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#start-btn:active {
+  transform: scale(0.95);
+}
+
+/* 游戏结束界面 */
+#gameover-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(44, 62, 80, 0.9);
+  z-index: 10;
+  padding: 20px;
+}
+
+#gameover-screen.hidden {
+  display: none !important;
+}
+
+#gameover-screen h2 {
+  font-size: clamp(1.8rem, 7vw, 2.5rem);
+  color: #ECF0F1;
+  margin-bottom: 20px;
+}
+
+#gameover-screen .score-label,
+#gameover-screen .best-label {
+  font-size: 0.9rem;
+  color: #BDC3C7;
+  margin-top: 15px;
+}
+
+#gameover-screen #final-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #F1C40F;
+}
+
+#gameover-screen #best-score {
+  font-size: 1.5rem;
+  color: #2ECC71;
+}
+
+#restart-btn {
+  margin-top: 30px;
+  padding: 15px 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #E74C3C, #E67E22);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#restart-btn:active {
+  transform: scale(0.95);
+}
+
+/* 游戏中分数显示 */
+#score-display {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  z-index: 5;
+}
+
+#score-display.hidden {
+  display: none !important;
+}
+
+.hidden {
+  display: none !important;
+}

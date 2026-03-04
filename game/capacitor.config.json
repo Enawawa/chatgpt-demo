@@ -1,0 +1,8 @@
+{
+  "appId": "com.flybird.game",
+  "appName": "飞鸟闯关",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
