@@ -29,3 +29,8 @@ pnpm-debug.log*
 
 # Editor directories and files
 .idea
+
+# Android game build dependencies (large, can be re-downloaded)
+android_sdk/
+gradle/
+cocos4-repo/

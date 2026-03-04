@@ -1,0 +1,131 @@
+/* 星际跳跃 - 游戏样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f23;
+    overflow: hidden;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+#game-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    display: block;
+    background: linear-gradient(180deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    max-width: 100%;
+    max-height: 100%;
+    touch-action: none;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ui-overlay > * {
+    pointer-events: auto;
+}
+
+#start-screen, #game-over-screen {
+    text-align: center;
+    padding: 30px;
+    background: rgba(26, 26, 46, 0.9);
+    border-radius: 20px;
+    border: 2px solid #e94560;
+    box-shadow: 0 0 30px rgba(233, 69, 96, 0.3);
+    max-width: 90%;
+}
+
+#start-screen h1, #game-over-screen h2 {
+    color: #e94560;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+}
+
+.subtitle {
+    color: #a2d2ff;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    color: #94a3b8;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.high-score {
+    color: #fbbf24;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+button {
+    background: linear-gradient(135deg, #e94560, #c73e54);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:hover {
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.5);
+}
+
+#hud {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#score-display {
+    color: #a2d2ff;
+}
+
+#lives-display {
+    color: #e94560;
+}
