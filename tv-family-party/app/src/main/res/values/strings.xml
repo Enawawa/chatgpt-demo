@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">客厅派对问答</string>
+    <string name="start_title">客厅派对问答</string>
+    <string name="start_subtitle">适合家庭成员轮流参与的 TV 问答游戏</string>
+    <string name="start_game">开始游戏</string>
+    <string name="show_rules">查看规则</string>
+    <string name="rules_title">玩法规则</string>
+    <string name="rules_content">1. 每回合会指定当前答题队伍。\n2. 使用遥控器方向键选择答案，按确定提交。\n3. 每题限时 20 秒，答对得 10 分。\n4. 题目结束后自动轮换到另一队。\n5. 全部回合结束后按总分决出胜负。</string>
+    <string name="round_format">第 %1$d / %2$d 题</string>
+    <string name="team_turn_format">当前回合：%1$s</string>
+    <string name="timer_format">剩余 %1$d 秒</string>
+    <string name="timer_stopped">本题已结束</string>
+    <string name="score_format">%1$s：%2$d 分    %3$s：%4$d 分</string>
+    <string name="option_format">%1$s. %2$s</string>
+    <string name="team_red">红队</string>
+    <string name="team_blue">蓝队</string>
+    <string name="hint_text">提示：方向键移动焦点，确定键提交答案。</string>
+    <string name="continue_text">下一题</string>
+    <string name="correct_feedback">回答正确！+10 分</string>
+    <string name="wrong_feedback">回答错误，正确答案是：%1$s</string>
+    <string name="timeout_feedback">超时，本题未得分。正确答案是：%1$s</string>
+    <string name="result_title">对局结束</string>
+    <string name="result_tie">平局！两队都很厉害</string>
+    <string name="result_win_format">获胜队伍：%1$s</string>
+    <string name="play_again">再来一局</string>
+</resources>
