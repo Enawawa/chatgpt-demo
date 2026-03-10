@@ -1,0 +1,10 @@
+<resources>
+    <color name="bg_main">#101B2D</color>
+    <color name="accent">#3D8BFF</color>
+    <color name="option_normal">#2A3F5E</color>
+    <color name="option_focus">#4E78B8</color>
+    <color name="text_primary">#F5F8FF</color>
+    <color name="text_secondary">#BFD0EA</color>
+    <color name="success">#3CCB7F</color>
+    <color name="error">#FF7878</color>
+</resources>
